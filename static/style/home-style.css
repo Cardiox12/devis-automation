@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+button {
+	border: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+
+ul {
+	list-style: none;
+}
+
+.btn {
+	color: #5F6368;
+	background-color: #f2f2f2;
+	border-radius: 2px;
+}
+
+.btn:hover {
+	transform: scale(1.01);
+	border: 1px solid black;
+}
+
+.btn:active {
+	transform: scale(1.02);
+}
+
+header {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100%;
+	padding: 15px;
+}
+
+.quote-card {
+	margin: 0px 10px;
+	width: 250px;
+	height: 320px;
+	border: 1px solid black;
+}
+
+.quotes-container {
+	display: flex;
+}
+
+.quote-card-title {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15%;
+	border-bottom: 1px solid black;
+}
+
+.quote-card-desc {
+	padding: 15px;
+	height: 60%;
+	border-bottom: 1px solid black;
+}
+
+.quote-card-footer {
+	margin: 0 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 15%;
+}
+
+.quote-card-footer-btn>button {
+	padding: 3px 5px;
+}
+
+.quote-card-footer-price>input {
+	width: 50px;
+}
+
+/* Quote list  */
+
+.quote-list-container {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid grey;
+	height: 700px;
+	width: 300px;
+}
+
+.quote-list {
+	height: 90%;
+}
+
+.quote-list>ul>li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	overflow: hidden;
+	border-bottom: 1px solid black;
+}
+
+.quote-list-resume {
+	border-top: 1px solid black;
+	padding: 10px 10px;
+	height: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.quote-list-resume-price {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.quote-list-resume-btn {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.quote-list-resume-btn>button {
+	padding: 10px 50px;
+}
