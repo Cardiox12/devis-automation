@@ -57,6 +57,8 @@ header {
 
 .quotes-container {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .quote-card-title {
@@ -72,6 +74,7 @@ header {
 	padding: 15px;
 	height: 60%;
 	border-bottom: 1px solid black;
+	overflow-y: scroll;
 }
 
 .quote-card-footer {
@@ -103,6 +106,7 @@ header {
 
 .quote-list {
 	height: 90%;
+	overflow-y: scroll;
 }
 
 .quote-list>ul>li {
@@ -137,4 +141,13 @@ header {
 
 .quote-list-resume-btn>button {
 	padding: 10px 50px;
+	width: 100%;
+}
+
+.quote-list-item-name {
+	padding: 10px;
+}
+
+.quote-list-item-price {
+	padding: 10px;
 }
