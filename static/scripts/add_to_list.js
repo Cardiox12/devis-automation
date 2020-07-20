@@ -5,7 +5,7 @@ function add_to_list(item){
 	const quote_list = document.querySelector(".quote-list").querySelector("ul");
 
 	const html = `
-		<li class="quote-list-item">
+		<li class="quote-list-item" onclick="delete_item(this)">
 			<span class="quote-list-item-name">${quote_title}</span>
 			<div class="quote-list-item-price">
 				<span>${quote_price}</span>
@@ -28,4 +28,9 @@ function get_price(){
 		acc += parseInt(price.innerHTML, 10);
 	}
 	price_label.innerHTML = `${acc}`;
+}
+
+function delete_item(item){
+	item.remove();
+	get_price();
 }
