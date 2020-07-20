@@ -1,0 +1,22 @@
+{
+	"prestations" : [
+		{
+			"name" : "Scrapping",
+			"type" : "python",
+			"description" : "Mission de scrapping, récolte de données sur les sites énoncés par le client. Utilisation des technologies BeautifulSoup / Selenium.",
+			"price" : 600
+		},
+		{
+			"name" : "Wordpress",
+			"type" : "web",
+			"description" : "Développement d'un site vitrine avec Wordpress selon les envies du client. Le site sera développée à l'aide d'une maquette fournie par le client.",
+			"price" : 1000
+		},
+		{
+			"name" : "Développement d'API rest",
+			"type" : "web",
+			"description" : "Développement d'une API rest selon les envies du client.",
+			"price" : 1200
+		}
+	]
+}
