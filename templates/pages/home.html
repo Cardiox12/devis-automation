@@ -25,7 +25,7 @@
 						</div>
 
 						<div class="quote-card-footer-btn">
-							<button class="btn">+</button>
+							<button class="btn" onclick="add_to_list(this)">+</button>
 						</div>
 					</div>
 				</div>
@@ -35,13 +35,13 @@
 		<div class="quote-list-container">
 			<div class="quote-list">
 				<ul>
-					<li class="quote-list-item">
+					<!-- <li class="quote-list-item">
 						<span class="quote-list-item-name">Nom prestation</span>
 						<div class="quote-list-item-price">
 							<span>XXX</span>
 							<span>€</span>
 						</div>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 
@@ -61,4 +61,5 @@
 			</div>
 		</div>
 	</div>
+	<script src="{{ url_for('static', filename='scripts/add_to_list.js') }}"></script>
 {% endblock %}
