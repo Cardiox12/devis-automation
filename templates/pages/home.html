@@ -1,70 +1,63 @@
-<!DOCTYPE html>
+{% extends "layouts/default.html" %}
 
-<html>
-	<head>
-		<title>Devis</title>
-		<link rel="stylesheet" href="../../static/style/home-style.css" type="text/css">
-	</head>
+{% block stylesheet %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='style/home.css') }}" type="text/css">
+{% endblock %}
 
-	<body>
-		<header>
-			<h1>Devis</h1>
-		</header>
-
-		<div class="main-container">
-			<div class="quotes-container">
-				
-				<div class="quote-card">
-					<div class="quote-card-title">
-						<h3>Prestation 0</h3>
-					</div>
-	
-					<div class="quote-card-desc">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-					</div>
-	
-					<div class="quote-card-footer">
-						<div class="quote-card-footer-price">
-							<span>Prix :</span>
-							<input type="number" value="0">
-							<span>€</span>
-						</div>
-	
-						<div class="quote-card-footer-btn">
-							<button class="btn">+</button>
-						</div>
-					</div>
-				</div>
-			</div>
-	
-			<div class="quote-list-container">
-				<div class="quote-list">
-					<ul>
-						<li class="quote-list-item">
-							<span class="quote-list-item-name">Nom prestation</span>
-							<div class="quote-list-item-price">
-								<span>XXX</span>
-								<span>€</span>
-							</div>
-						</li>
-					</ul>
+{% block body %}
+	<div class="main-container">
+		<div class="quotes-container">
+			
+			<div class="quote-card">
+				<div class="quote-card-title">
+					<h3>Prestation 0</h3>
 				</div>
 
-				<div class="quote-list-resume">
-					<div class="quote-list-resume-price">
-						<div class="quote-resume-price-title">
-							<span>Prix :</span>
-						</div>
-						<div class="quote-resume-price-dyn-item">
-							<span>XXX</span>
-							<span>€</span>
-						</div>
+				<div class="quote-card-desc">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				</div>
+
+				<div class="quote-card-footer">
+					<div class="quote-card-footer-price">
+						<span>Prix :</span>
+						<input type="number" value="0">
+						<span>€</span>
 					</div>
-					<div class="quote-list-resume-btn">
-						<button class="btn">Générer</button>
+
+					<div class="quote-card-footer-btn">
+						<button class="btn">+</button>
 					</div>
 				</div>
 			</div>
 		</div>
-	</body>
-</html>
+
+		<div class="quote-list-container">
+			<div class="quote-list">
+				<ul>
+					<li class="quote-list-item">
+						<span class="quote-list-item-name">Nom prestation</span>
+						<div class="quote-list-item-price">
+							<span>XXX</span>
+							<span>€</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="quote-list-resume">
+				<div class="quote-list-resume-price">
+					<div class="quote-resume-price-title">
+						<span>Prix :</span>
+					</div>
+					<div class="quote-resume-price-dyn-item">
+						<span>XXX</span>
+						<span>€</span>
+					</div>
+				</div>
+				<div class="quote-list-resume-btn">
+					<button class="btn">Générer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
