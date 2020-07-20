@@ -1,0 +1,11 @@
+.title-container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+}
+
+.title-container>h1 {
+	margin: 200px;
+	font-size: 100px;
+}

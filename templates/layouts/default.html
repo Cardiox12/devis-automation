@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Devis</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style/default.css') }}" type="text/css">
+		{% block stylesheet %}{% endblock %}
+	</head>
+
+	<body>
+		{% include "partials/_header.html" %}
+
+		{% block body %}{% endblock %}
+	</body>
+</html>
