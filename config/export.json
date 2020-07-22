@@ -1,0 +1,14 @@
+{
+    "services": [
+        {
+            "name": "Wordpress",
+            "price": "2000",
+            "description": "Développement d'un site vitrine avec Wordpress selon les envies du client. Le site sera développée à l'aide d'une maquette fournie par le client."
+        },
+        {
+            "name": "Scrapping",
+            "price": "1000",
+            "description": "Mission de scrapping, récolte de données sur les sites énoncés par le client. Utilisation des technologies BeautifulSoup / Selenium."
+        }
+    ]
+}
