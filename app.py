@@ -17,7 +17,7 @@ def home():
 			infos = []
 			for item in items:
 				infos.append(item[1])
-			config.append(infos)	
+			config.append(infos)
 
 	with open("config/prestations.json", "r") as f:
 		data = json.load(f)
@@ -27,7 +27,7 @@ def home():
 				print("No config")
 			else:
 				print(config)
-		return render_template("pages/home.html", quotes=data["prestations"])
+		return render_template("pages/home.html", quotes=data)
 
 @app.errorhandler(404)
 def page_not_found(error):

@@ -7,20 +7,20 @@
 {% block body %}
 	<div class="main-container">
 		<div class="quotes-container">
-			{% for quote in  quotes %}
+			{% for key in  quotes %}
 				<div class="quote-card">
 					<div class="quote-card-title">
-						<h3>{{ quote.get("name") }}</h3>
+						<h3>{{ key }}</h3>
 					</div>
 
 					<div class="quote-card-desc">
-						<p>{{ quote.get("description") }}</p>
+						<p>{{ quotes.get(key).get("description") }}</p>
 					</div>
 
 					<div class="quote-card-footer">
 						<div class="quote-card-footer-price">
 							<span>Prix :</span>
-							<input type="number" value="{{ quote.get('price') }}">
+							<input type="number" value="{{ quotes.get(key).get('price') }}">
 							<span>€</span>
 						</div>
 
