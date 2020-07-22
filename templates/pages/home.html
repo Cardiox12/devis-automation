@@ -31,34 +31,36 @@
 				</div>
 			{% endfor %}
 		</div>
-
+		
 		<div class="quote-list-container">
-			<div class="quote-list">
-				<ul>
-					<!-- <li class="quote-list-item">
-						<span class="quote-list-item-name">Nom prestation</span>
-						<div class="quote-list-item-price">
-							<span>XXX</span>
+			<form action="/" method="post" id="quote-list-form">
+				<div class="quote-list">
+					<ul>
+						<!-- <li class="quote-list-item">
+							<span class="quote-list-item-name">Nom prestation</span>
+							<div class="quote-list-item-price">
+								<span>XXX</span>
+								<span>€</span>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+
+				<div class="quote-list-resume">
+					<div class="quote-list-resume-price">
+						<div class="quote-resume-price-title">
+							<span>Total TTC :</span>
+						</div>
+						<div class="quote-resume-price-dyn-item">
+							<span>0</span>
 							<span>€</span>
 						</div>
-					</li> -->
-				</ul>
-			</div>
-
-			<div class="quote-list-resume">
-				<div class="quote-list-resume-price">
-					<div class="quote-resume-price-title">
-						<span>Total TTC :</span>
 					</div>
-					<div class="quote-resume-price-dyn-item">
-						<span>0</span>
-						<span>€</span>
+					<div class="quote-list-resume-btn">
+						<button class="btn" type="submit" id="generate-btn">Générer</button>
 					</div>
 				</div>
-				<div class="quote-list-resume-btn">
-					<button class="btn">Générer</button>
-				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 	<script src="{{ url_for('static', filename='scripts/add_to_list.js') }}"></script>

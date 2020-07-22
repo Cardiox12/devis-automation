@@ -54,6 +54,10 @@
 
 /* Quote list  */
 
+#quote-list-form {
+	height: 97%;
+}
+
 .quote-list-container {
 	display: flex;
 	flex-direction: column;
@@ -97,7 +101,7 @@
 	width: 100%;
 }
 
-.quote-list-resume-btn>button {
+#generate-btn {
 	padding: 10px 50px;
 	width: 100%;
 }

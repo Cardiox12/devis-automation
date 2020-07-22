@@ -1,16 +1,33 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import json
 
 app = Flask(__name__)
 
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def home():
+	config = None
+
+	if request.method == "POST":
+		data = request.form.items()
+		config = []
+
+		for items in zip(*[iter(data)] * 2):
+			infos = []
+			for item in items:
+				infos.append(item[1])
+			config.append(infos)	
+
 	with open("config/prestations.json", "r") as f:
 		data = json.load(f)
+
+		if config != None:
+			if len(config) == 0:
+				print("No config")
+			else:
+				print(config)
 		return render_template("pages/home.html", quotes=data["prestations"])
-	return render_template('pages/home.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
